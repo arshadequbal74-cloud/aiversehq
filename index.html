@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIVerse HQ — Imagine. Create. Explore.</title>
+<meta name="description" content="AIVerse HQ — cinematic AI creations, miniature worlds and futuristic visual stories.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#03050b;color:#fff;line-height:1.5;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(0,180,255,.10),transparent 28%),
+    radial-gradient(circle at 80% 30%,rgba(150,50,255,.10),transparent 30%);
+  z-index:-1;
+}
+header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:blur(16px);
+  background:rgba(3,5,11,.78);
+  border-bottom:1px solid rgba(100,180,255,.15);
+}
+.nav{
+  max-width:1100px;margin:auto;padding:12px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.brand span{font-size:18px}
+nav a{color:#cfd8ff;text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:#6ee7ff}
+.hero{
+  min-height:82vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:55px 20px;
+}
+.hero-inner{max-width:850px}
+.hero-logo{
+  width:min(210px,55vw);aspect-ratio:1;object-fit:cover;border-radius:50%;
+  box-shadow:0 0 55px rgba(0,190,255,.25),0 0 85px rgba(140,60,255,.18);
+  margin-bottom:25px;
+}
+h1{
+  font-size:clamp(42px,9vw,78px);line-height:1;
+  background:linear-gradient(90deg,#fff,#6ee7ff,#b78cff,#fff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tagline{font-size:clamp(18px,4vw,25px);color:#aeb8d7;margin:18px 0 28px}
+.btn{
+  display:inline-block;padding:13px 23px;border-radius:999px;
+  color:#fff;text-decoration:none;font-weight:700;
+  border:1px solid rgba(100,220,255,.5);
+  background:linear-gradient(100deg,rgba(0,180,255,.18),rgba(150,70,255,.18));
+  box-shadow:0 0 25px rgba(0,180,255,.12);
+}
+section{max-width:1100px;margin:auto;padding:70px 18px}
+.section-title{text-align:center;font-size:34px;margin-bottom:12px}
+.section-sub{text-align:center;color:#8e99ba;margin-bottom:35px}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;
+}
+.card{
+  padding:24px;border-radius:20px;
+  background:linear-gradient(145deg,rgba(15,22,40,.95),rgba(7,10,20,.95));
+  border:1px solid rgba(120,190,255,.14);
+  transition:.25s;position:relative;overflow:hidden;
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(110,220,255,.4)}
+.icon{font-size:40px;margin-bottom:12px}
+.card h3{font-size:21px;margin-bottom:7px}
+.card p{color:#9aa6c8;font-size:14px}
+.badge{
+  display:inline-block;margin-top:17px;padding:6px 10px;border-radius:999px;
+  font-size:11px;color:#8eeaff;background:rgba(0,190,255,.08);
+  border:1px solid rgba(0,190,255,.18)
+}
+.about{
+  text-align:center;max-width:780px;
+}
+.about p{color:#aab4d0;font-size:16px}
+footer{
+  text-align:center;padding:35px 18px;color:#707b9c;
+  border-top:1px solid rgba(100,180,255,.12)
+}
+.social{margin-top:22px}
+.social a{color:#6ee7ff;text-decoration:none;font-weight:700}
+@media(max-width:650px){
+ nav a{margin-left:8px;font-size:12px}
+ .brand span{font-size:15px}
+ .brand img{width:38px;height:38px}
+ section{padding:55px 16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo.png" alt="AIVerse HQ logo">
+      <span>AIVerse HQ</span>
+    </div>
+    <nav>
+      <a href="#creations">Creations</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <img class="hero-logo" src="logo.png" alt="AIVerse HQ">
+      <h1>AIVerse HQ</h1>
+      <p class="tagline">Imagine. Create. Explore.</p>
+      <a class="btn" href="#creations">Explore AI Creations ↓</a>
+    </div>
+  </section>
+
+  <section id="creations">
+    <h2 class="section-title">AI Creations</h2>
+    <p class="section-sub">Cinematic worlds created with artificial intelligence.</p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="icon">💎</div>
+        <h3>Diamond Factory</h3>
+        <p>From deep-earth mining to polished luxury diamonds and delivery.</p>
+        <span class="badge">AI CINEMATIC</span>
+      </article>
+
+      <article class="card">
+        <div class="icon">🪙</div>
+        <h3>Gold Factory</h3>
+        <p>Gold ore, giant furnaces, molten gold, bars and secure shipping.</p>
+        <span class="badge">AI CINEMATIC</span>
+      </article>
+
+      <article class="card">
+        <div class="icon">⌚</div>
+        <h3>Luxury Watch Factory</h3>
+        <p>Tiny workers assemble precision gears, cases and premium watches.</p>
+        <span class="badge">AI CINEMATIC</span>
+      </article>
+
+      <article class="card">
+        <div class="icon">🍫</div>
+        <h3>Food & Factory Worlds</h3>
+        <p>Impossible miniature factories where everyday things become giant adventures.</p>
+        <span class="badge">COMING SOON</span>
+      </article>
+
+      <article class="card">
+        <div class="icon">🚗</div>
+        <h3>Future Machines</h3>
+        <p>Supercars, futuristic machines and massive production worlds.</p>
+        <span class="badge">COMING SOON</span>
+      </article>
+
+      <article class="card">
+        <div class="icon">🚀</div>
+        <h3>Next-Level Worlds</h3>
+        <p>More cinematic AI concepts are being created inside AIVerse HQ.</p>
+        <span class="badge">COMING SOON</span>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About AIVerse HQ</h2>
+    <p>
+      AIVerse HQ is a creative AI video brand focused on miniature worlds,
+      impossible factories, cinematic processes and futuristic visual stories.
+      Imagine something impossible — then bring it to life.
+    </p>
+    <div class="social">
+      <a href="https://instagram.com/aiversehq_x" target="_blank" rel="noopener">
+        Follow @aiversehq_x on Instagram →
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 AIVerse HQ · Imagine. Create. Explore.
+</footer>
+
+</body>
+</html>
